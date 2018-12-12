@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>＋α</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/plus1.css">
+</head>
+<body>
+    <div id="test">
+
+    </div>
+
+    <div class="login" id="login">
+        <p>ログインID・パスワードを入力してください</p>
+        <form action="">
+            <dl>
+                <dt>ID：</dt>
+                <dd><input type="text" id="loginID"></dd>
+            </dl>
+            <dl>
+                <dt>PW：</dt>
+                <dd><input type="text" id="loginPW"></dd>
+            </dl>
+            <dl class="loginform">
+                <a href="#" id="register">新規登録する</a>
+                <a href="#" id="loginbtn">ログインする</a>
+            </dl>
+        </form>
+    </div>
+    <!-- 音声認識 -->
+    <div>
+        <button id="btn">音声認識スタート</button>
+        <p id="info"></p>
+    </div>
+
+    <div class="qsList">
+        <ul class="list">
+            <li class="qsno1">ゲーム</li>
+            <li class="qsno2" href="top.html">音楽</li>
+            <li class="qsno3">プログラミング</li>
+        </ul>
+        <ul class="list">
+            <li class="qsno4">ビジネス</li>
+            <li class="qsno5">経済</li>
+            <li class="qsno6">政治</li>
+        </ul>
+        <ul class="list">
+            <li class="qsno7">芸能</li>
+            <li class="qsno8">健康</li>
+            <li class="qsno9">食事</li>
+        </ul>
+
+        <div>
+            <button id="qsbtn">問題を決定する</button>
+            <p id="qsSelect"></p>
+        </div>
+    </div>
+    
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/plus1.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ログインページ</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/plus1.css">
+</head>
+<body>
+    <!-- ログインページ -->
+    <div class="login" id="login">
+        <p>ログインID・パスワードを入力してください</p>
+        <form action="">
+            <dl>
+                <dt>ID：</dt>
+                <dd><input type="text" id="loginID"></dd>
+            </dl>
+            <dl>
+                <dt>PW：</dt>
+                <dd><input type="text" id="loginPW"></dd>
+            </dl>
+            <dl class="loginform">
+                <a href="" id="register">新規登録する</a>
+                <!-- <button id="register">新規</button> -->
+                <a href="" id="loginbtn">ログインする</a>
+                <!-- <button id="loginbtn">ログイン</button> -->
+            </dl>
+        </form>
+    </div>
+
+    <div>
+        <h1>パスワード生成</h1>
+        <button id="pwcreate">パスワードを生成する</button>
+        <ul class="list">
+
+        </ul>
+    </div>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/plus1.js"></script>
+</body>
+</html>

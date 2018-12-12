@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>クイズ課題</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">クイズ練習（複数）</h1>
+    </header>
+    <main>
+        <p id="quest">ここに問題が出題されます</p>
+        <p id="question">
+        <label><input type="radio" name="toi" value="1"><span id="toi1">選択肢１</span></label>
+        <label><input type="radio" name="toi" value="2"><span id="toi2">選択肢２</span></label>
+        <label><input type="radio" name="toi" value="3"><span id="toi3">選択肢３</span></label>
+        </p>
+
+        <div id="score">
+
+        </div>
+
+        <!-- 回答時間のアニメーション -->
+        <div class="nokori">
+            <p id="resttime" class="resttime"></p>
+            <button id="stop">タイマーを止める</button>
+        </div>
+
+        <div class="history">
+            <h3>過去の成績</h3>
+            <button id="historyBtn">これまでの記録を見る</button>
+            <ul id="seiseki">
+
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>copyright2018</p>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
