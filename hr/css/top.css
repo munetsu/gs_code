@@ -1,0 +1,312 @@
+@charset "utf-8";
+
+/* -------------------------------- 
+* 全共通
+-------------------------------- */
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color:#FED8B8;
+    width: 100vw;
+    height:100vh;
+    position: relative;
+}
+
+/*------------------------------------ 
+* ヘッダー部分
+------------------------------------*/
+
+.header {
+    height: 10%;
+    background-color:#F9F9F8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoarea {
+    margin:10px 0 10px 20px;
+}
+
+#logo {
+    width: 300px;
+    height: 50px;
+}
+
+.side {
+    margin: 10px 20px;
+    height: 80%;
+    display: flex;
+    background-color:#FEDBB8;
+    border-radius: 10%;
+    z-index:100;
+}
+
+.sidelist {
+    text-align: center;
+    width: 180px;
+}
+
+.list {
+    height: 50px;
+    padding:20px 10px;
+    background-color: #FEDBB8;
+}
+
+.hide {
+    display: none;
+}
+
+.sideicon {
+    width: 30px;
+    margin: 15px 10px;
+}
+
+/*------------------------------------ 
+* メイン部分
+------------------------------------*/
+.mainarea {
+    display: flex;
+    position: relative;
+    height: 90%;
+}
+
+/*------------------------------------ 
+* Menu部分
+------------------------------------*/
+
+.leftarea {
+    width: 4%;
+    height: 100%;
+    background-color:#E4E2E0;
+}
+
+.menu_a {
+    text-decoration: none;
+    color:#4b4b4b;
+}
+
+.menuicon {
+    height: 20%;
+    width: 90%;
+    margin:30px 3px 0 3px;
+}
+
+.hovertext {
+    font-size: 14px;
+    margin: 3px 1.5px;;
+    display:none;
+}
+
+
+/*------------------------------------ 
+* メインエリア部分
+------------------------------------*/
+
+.rightarea {
+    width: 96%;
+    height: 100%;
+    background-color:#F2E4D6;
+}
+
+.main {
+    position: relative;
+    height: 95%;
+    overflow: scroll;
+}
+
+.upper {
+    height: 50%;
+    /* background-color:#C7BCAB; */
+}
+
+.uppertext {
+    width: 150px;
+    margin: 0 auto;
+    position: absolute;
+    top:0;
+    left: 46%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.undertext {
+    width: 150px;
+    margin: 0 0 0 auto;
+    position: absolute;
+    right: 0;
+    bottom: 48%;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.first{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    /* background-color:#C7BCAB; */
+    z-index:3;
+}
+
+.second {
+    position: absolute;
+    top:0;
+    right: 0;
+    width:50%;
+    height: 50%;
+    border-left: solid 0.03px gray;
+    /* background-color:#AE8F60; */
+    z-index:3;
+}
+
+.under {
+    height: 50%;
+    background-color:#B7B6B6;
+}
+
+.third {
+    position: absolute;
+    top:100;
+    right: 0;
+    width:50%;
+    height: 50%;
+    border-left: solid 0.03px gray;
+    /* background-color:#B7B6B6; */
+}
+
+.fourth {
+    position: absolute;
+    top:100;
+    left: 0;
+    width:50%;
+    height: 50%;
+    /* background-color:#383735; */
+}
+
+.create {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.createbtn {
+    width: 50px;
+    height: 50px;
+}
+
+/*------------------------------------ 
+* カード部分
+------------------------------------*/
+.card {
+    width: 400px;
+    height: 50px;
+    border: solid 0.3px black;
+    margin: 30px 40px 10px 40px;
+    display: flex;
+}
+
+.day {
+    left: 0;
+    border: solid 1px black;
+    border-radius: 28px;
+    background-color: white;
+    width: 60px;
+    height: 50px;
+    text-align: center;
+}
+
+.rest {
+    display: inline-block;
+    color: red;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.ullist {
+    margin: 10px 30px;
+}
+
+.more {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+/*------------------------------------ 
+* Todo全見せ部分
+------------------------------------*/
+.listline {
+    display: flex;
+    width: 90%;
+    margin: 20px;
+}
+
+.listall {
+    width: 400px;
+    height: 500px;
+    margin: 20px;
+    border: double 5px gray;
+    border-radius: 5%;
+}
+
+.oneblock {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.oneblock p {
+    width: 100px;
+}
+
+.oneblock span {
+    margin-left:5px;
+}
+
+.oneblock a {
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    background-color: #EE7509;
+    color: white;
+    border-bottom: solid 4px #925825;
+    border-radius: 3px;
+}
+
+.oneblock a:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(2px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+
+.doing {
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    background-color: #9F632D;
+    color: white;
+}
+
+
+/*------------------------------------ 
+* フッター部分
+------------------------------------*/
+.footer {
+    bottom: 0;
+    background-color:#B77737;
+    position: absolute;
+    height: 5%;
+    width: 96%;
+}

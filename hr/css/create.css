@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.main {
+    width: 80%;
+    margin:20px auto;
+    overflow: scroll;
+    text-align: center;
+}
+
+.item {
+    font-size: 20px;
+    text-align: left;
+    width: 100px;
+}
+
+#title {
+    width: 80%;
+    height: 40px;
+}
+
+.itemlist {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.inputarea {
+    width: 200px;
+    font-size: 16px;
+}
+
+#list {
+    display: flex;
+}
+
+.userlist {
+    width: 100px;
+    height: 75px;
+}
+
+.photolist {
+    margin-bottom: 50px;
+}
+
+.textarea {
+    width: 350px;
+    height: 100px;
+}
+
+.addbtn {
+    display: inline-block;
+    width: 100px;
+    padding: 1em;
+}
+
+.close {
+    display: none;
+}
+
+/* ------------------------------ 
+*作成ボタン
+------------------------------ */
+.submitzone {
+    text-align: center;
+}
+
+
+#submitbtn {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    padding: 1em 3em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+#submitbtn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
